@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: myacrcontainerregistry1389.azurecr.io/app1
+          image: demaksac.azurecr.io/app1
           ports:
             - containerPort: 80
 ---
@@ -27,7 +27,7 @@ metadata:
   labels:
     app: app1-nginx
 spec:
-  type: Nodeport
+  type: LoadBalancer
   selector:
     app: app1-nginx
   ports:
