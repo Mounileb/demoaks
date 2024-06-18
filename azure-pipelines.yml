@@ -23,3 +23,8 @@ stages:
                $(tag)
         
          # Task 2 publish build artifacts
+         - task: PublishPipelineArtifact@1
+           inputs:
+            targetPath: '$(Pipeline.Workspace)/s/kube-manifests'
+            artifact: 'drop'
+            publishLocation: 'pipeline'
