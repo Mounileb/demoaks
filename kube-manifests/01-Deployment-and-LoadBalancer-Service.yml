@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: demaksac.azurecr.io/app1:43
+          image: demaksac.azurecr.io/mounilebakstutorial:61
           ports:
             - containerPort: 80
 ---
