@@ -27,7 +27,7 @@ metadata:
   labels:
     app: app1-nginx
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: app1-nginx
   ports:
